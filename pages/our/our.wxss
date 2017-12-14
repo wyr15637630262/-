@@ -1,0 +1,45 @@
+/* pages/our/our.wxss */
+.wrap{
+  background: #f6f6f4;
+}
+.getInfo{
+  width: 100%;
+  height: 200rpx;
+  line-height: 200rpx;
+  background: #eeeeee;
+}
+.userinfo-img{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin:0 40rpx 0 70rpx;
+}
+.userinfo-name{
+  color: #555555;
+  font-size: 40rpx;
+}
+.list{
+  width: 100%;
+  height: 510rpx;
+  background: #ffffff;
+}
+.list-adress{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #cccccc;
+}
+.list-icon{
+  padding: 0 20rpx;
+}
+.list-msg{
+  font-size: 32rpx;
+  color: #8a8a8a;
+}
+.list-point{
+  font-size: 36rpx;
+  color: #8a8a8a;
+  float: right;
+  padding-right: 40rpx;
+}

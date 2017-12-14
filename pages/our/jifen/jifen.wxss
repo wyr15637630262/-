@@ -1,0 +1,57 @@
+/* pages/our/jifen/jifen.wxss */
+.wrap{
+  background: #f6f6f4;
+}
+.current-jifen{
+  width: 100%;
+  height: 200rpx;
+  background: #00AA55;
+}
+.jifen-value{
+  padding: 40rpx 0 20rpx 60rpx;
+  color: #ffffff;
+  font-size: 40rpx;
+}
+.jifen-number{
+  padding-left: 60rpx;
+  color: #ffffff;
+  font-size: 32rpx;
+}
+
+.swiper-tab{  
+  width: 100%;  
+  height: 90rpx;
+  border-bottom: 2rpx solid #ffffff;  
+  text-align: center;  
+  line-height: 90rpx;
+  background: #ffffff;
+  margin-top: 20rpx;
+}  
+.swiperTab-main{
+  width: 40%;  
+  height: 90rpx;
+  margin: 0 auto;
+  font-size: 28rpx;
+}
+.swiper-tab-list{  
+  font-size: 28rpx;  
+  display: inline-block;  
+  width: 50%;  
+  color: #777777;  
+}  
+.on{ 
+  color: #00AA00;  
+  border-bottom: 2rpx solid #00AA00;
+  font-size: 28rpx;
+}  
+  
+.swiper-box{ 
+  display: block; 
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden;
+  background: #f6f6f4;  
+}  
+.swiper-box view{  
+  text-align: center;  
+}  

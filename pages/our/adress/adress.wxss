@@ -1,0 +1,33 @@
+/* pages/our/adress/adress.wxss */
+.wrap{
+  background: #f6f6f4;
+}
+.adress-list{
+  width: 100%;
+  height: auto;
+}
+.adressList-child{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #ffffff;
+}
+.adressList-child text{
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  color: #cccccc;
+}
+.add-adress{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+.add-adress text{
+  font-size: 36rpx;
+  color: #888888;
+}

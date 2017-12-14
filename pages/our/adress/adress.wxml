@@ -1,0 +1,14 @@
+<!--pages/our/adress/adress.wxml-->
+<view class="wrap">
+  <view class="adress-list">
+    <view class="adressList-child">
+      <text>暂无地址</text>
+    </view>
+    
+  </view>
+
+
+  <view class="add-adress" bindtap="toAdd">
+    <text>添加新地址</text>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<!--pages/our/info/info.wxml-->
+<view class="wrap">
+  <view class="swiper-tab"> 
+    <view class="swiperTab-main">
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">系统消息</view>  
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">互动消息</view>  
+    </view>  
+  </view> 
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+      <swiper-item>  
+        <view>系统消息</view>  
+      </swiper-item>   
+      <swiper-item>  
+        <view>互动消息</view>  
+      </swiper-item>    
+  </swiper>  
+</view>

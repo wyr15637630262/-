@@ -1,0 +1,39 @@
+<!--pages/cart/cart.wxml-->
+<view class="wrap">
+  <view class="cart-box">
+      <!-- wx:for 渲染购物车列表 -->
+      <view class='cart-list' wx:for="{{carts}}" wx:key="index">
+      
+          <!-- wx:if 是否选择显示不同图标 -->
+          <icon wx:if="{{item.selected}}" type="success" color="red" class="cart-pro-select" bindtap="selectList" data-index="{{index}}" />
+          <icon wx:else type="circle" class="cart-pro-select" bindtap="selectList" data-index="{{index}}"/>
+          
+          <image class="cart-thumb" src="{{item.image}}"></image>
+          <text class="cart-pro-name">{{item.title}}</text>
+          <text class="cart-pro-price">￥{{item.price}}</text>        
+          <!-- 增加减少数量按钮 -->
+          <view class="cart-count-box">
+              <text class="cart-count-down" bindtap="minusCount" data-index="{{index}}">-</text>
+              <text class="cart-count-num">{{item.num}}</text>
+              <text class="cart-count-add" bindtap="addCount" data-index="{{index}}">+</text>
+          </view>
+          
+          <!-- 删除按钮 -->
+          <text class="cart-del" bindtap="deleteList" data-index="{{index}}"> × </text>
+
+      </view>
+
+  </view>
+
+  <!-- 底部操作栏 -->
+  <view class='cart-footer'>
+      <!-- wx:if 是否全选显示不同图标 -->
+      <view bindtap="selectAll">
+      <icon wx:if="{{selectAllStatus}}" type="success_circle" class="total-select" color="#fff"/>
+      <icon wx:else type="circle" class="total-select" color="#fff"/>
+      </view>
+      <text>全选</text>    
+      <!-- 总价 -->
+      <text class="cart-toatl-price">￥{{totalPrice}}</text>
+  </view>
+</view>

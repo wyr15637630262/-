@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/kind/kind",
+    "pages/our/our",
+    "pages/cart/cart",
+    "pages/our/order/order",
+    "pages/our/adress/adress",
+    "pages/our/car/car",
+    "pages/our/info/info",
+    "pages/our/jifen/jifen",
+    "pages/our/adress/addAdress/addAdress"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "奶牛遇见布列塔尼",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color": "#8a8a8a",
+    "selectedColor":"#2c2c2c",
+    "list":[
+      {
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"utils/images/tabBar_indexs.png",
+      "selectedIconPath":"utils/images/tabBar_index.png"
+      },
+      {
+        "pagePath": "pages/kind/kind",
+        "text": "菜单",
+        "iconPath": "utils/images/tabBar_kinds.png",
+        "selectedIconPath": "utils/images/tabBar_kind.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "utils/images/tabBar_carts.png",
+        "selectedIconPath": "utils/images/tabBar_cart.png"
+      },
+      {
+        "pagePath": "pages/our/our",
+        "text": "我的",
+        "iconPath": "utils/images/tabBar_ours.png",
+        "selectedIconPath": "utils/images/tabBar_our.png"
+      }
+    ]
+  }
+}

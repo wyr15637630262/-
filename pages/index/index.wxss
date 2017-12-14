@@ -1,0 +1,20 @@
+/**index.wxss**/
+.wrap{
+  background: #efefef;
+}
+.wrap-swiper{
+  height: 400rpx;
+  width: 100%;
+}
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper swiper-item{
+  height: 400rpx;
+  width: 100%;
+}
+.swiper .slide-image {
+  height: 100%;
+  width: 100%;
+}

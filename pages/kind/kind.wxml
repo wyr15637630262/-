@@ -1,0 +1,38 @@
+<!--pages/kind/kind.wxml-->
+<view class="wrap">
+  <view class="wrap-content">
+
+    <view class="data-one">
+      <view class="data-title">
+        <text style="color:#999999;">——</text><text class="dataTitle">面包工坊</text><text style="color:#999999;">——</text>
+      </view>
+      <!--横向滑块-->
+      <view class="data-image">
+        <scroll-view class="recommend_scroll_x_box" scroll-x="true">
+          <view class="recommend_hot_box" wx:for="{{hotList}}" wx:key="index">
+            <image src="{{item.pic}}" class="recommend_hot_image"></image>
+            <view>{{item.title}}</view>
+            <view>{{item.desc}}</view>           
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+
+    <view class="data-one" style="margin-top:20rpx;">
+      <view class="data-title">
+        <text style="color:#999999;">——</text><text class="dataTitle">布列甜点</text><text style="color:#999999;">——</text>
+      </view>
+      <!--横向滑块-->
+      <view class="data-image">
+        <scroll-view class="recommend_scroll_x_box" scroll-x="true">
+          <view class="recommend_hot_box" wx:for="{{dataList}}" wx:key="i">
+            <image src="{{item.pic}}" class="recommend_hot_image"></image>
+            <view>{{item.title}}</view>
+            <view>{{item.desc}}</view>           
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,37 @@
+<!--pages/our/our.wxml-->
+<view class="wrap">
+    <view class="getInfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-img" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-name">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view class="list">
+      <view class="list-adress" bindtap='toAdress'>
+        <image class="list-icon" src="../../utils/images/our_adress.png" style="width:50rpx;height:50rpx;vertical-align:middle;"></image>
+        <text class="list-msg">收货地址</text>
+        <text class="list-point">></text>
+      </view>
+      <view class="list-adress" bindtap='toOrder'>
+        <image class="list-icon" src="../../utils/images/our_order.png" style="width:50rpx;height:50rpx;vertical-align:middle;"></image>
+        <text class="list-msg">我的订单</text>
+        <text class="list-point">></text>
+      </view>
+      <view class="list-adress" bindtap='toCar'>
+        <image class="list-icon" src="../../utils/images/our_car.png" style="width:50rpx;height:50rpx;vertical-align:middle;"></image>
+        <text class="list-msg">购物车</text>
+        <text class="list-point">></text>
+      </view>
+      <view class="list-adress" bindtap='toInfo'>
+        <image class="list-icon" src="../../utils/images/our_info.png" style="width:50rpx;height:50rpx;vertical-align:middle;"></image>
+        <text class="list-msg">系统通知</text>
+        <text class="list-point">></text>
+      </view>
+      <view class="list-adress" bindtap='toJifen'>
+        <image class="list-icon" src="../../utils/images/our_jifen.png" style="width:45rpx;height:45rpx;vertical-align:middle;padding-left:30rpx"></image>
+        <text class="list-msg">积分</text>
+        <text class="list-point">></text>
+      </view> 
+    </view>
+</view>
